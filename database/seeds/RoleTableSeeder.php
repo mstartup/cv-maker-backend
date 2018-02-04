@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
-class EducationTableSeeder extends Seeder
+class RoleTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,8 +11,7 @@ class EducationTableSeeder extends Seeder
      */
     public function run()
     {
-    DB::table('educations')->insert([
+       DB::table('programming_languages')->insert([
             'name' => str_random(10),
-    });
-}
+    }
 }

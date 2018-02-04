@@ -22,3 +22,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('educations', 'EducationController@index');
+
+Route::post('libraries', 'LibrariesController@index');
+
+Route::post('programing_languages', 'ProgrammingLanguagesController@index');
+
+Route::post('roles', 'RolesController@index');
+
+Route::post('permissions', 'PermissionsController@index');
