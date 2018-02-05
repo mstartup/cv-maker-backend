@@ -18,17 +18,3 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::resource('education', 'EducationController@index');
-
-Route::resource ('librarie', 'LibrarieController@index');
-
-Route::resource ('programing_language', 'ProgrammingLanguagesController@index');
-
-Route::resource ('role', 'RoleController@index');
-
-Route::resource ('permission', 'PermissionController@index');
