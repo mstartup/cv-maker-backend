@@ -4,20 +4,27 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+            <div class="panel panel-info">
+                <div class="panel-heading">Langugages:</div>
 
                 <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    @foreach($languages as $language)
+                        {{ $language->name }} <br>
+                    @endforeach
+                </div>
+            </div>
 
-                    You are logged in!
+            <div class="panel panel-info">
+                <div class="panel-heading">Libraries:</div>
+
+                <div class="panel-body">
+                    @foreach($libraries as $library)
+                        {{ $library->name }} <br>
+                    @endforeach
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
+
