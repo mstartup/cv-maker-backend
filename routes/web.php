@@ -16,8 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    $programming_languages=DB::table('programming_languages')->get()
-    return view('dashboard', compact('programming_language');
+    $programming_languages=DB::table('programming_languages')->get();
+    return view('dashboard', compact('programming_language'));
 });
 
 
