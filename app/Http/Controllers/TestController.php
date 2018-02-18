@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Programming_language;
+use App\Test;
 use Illuminate\Http\Request;
 
-class Programming_language extends Controller
+class TestController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class Programming_language extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Programming_language  $programming_language
+     * @param  \App\Test  $test
      * @return \Illuminate\Http\Response
      */
-    public function show(Programming_language $programming_language)
+    public function show(Test $test)
     {
         //
     }
@@ -52,10 +52,10 @@ class Programming_language extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Programming_language  $programming_language
+     * @param  \App\Test  $test
      * @return \Illuminate\Http\Response
      */
-    public function edit(Programming_language $programming_language)
+    public function edit(Test $test)
     {
         //
     }
@@ -64,10 +64,10 @@ class Programming_language extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Programming_language  $programming_language
+     * @param  \App\Test  $test
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Programming_language $programming_language)
+    public function update(Request $request, Test $test)
     {
         //
     }
@@ -75,10 +75,10 @@ class Programming_language extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Programming_language  $programming_language
+     * @param  \App\Test  $test
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Programming_language $programming_language)
+    public function destroy(Test $test)
     {
         //
     }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLibrariesTable extends Migration
+class CreateTestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateLibrariesTable extends Migration
      */
     public function up()
     {
-        Schema::create('libraries', function (Blueprint $table) {
+        Schema::create('tests', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->json('options'); //Noel check this
+            $table->integer('testResults');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateLibrariesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('libraries');
+        Schema::dropIfExists('tests');
     }
 }

@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
+=======
+Route::get('/dashboard', function () {
+    $programming_languages=DB::table('programming_languages')->get()
+    return view('dashboard', compact('programming_language'));
+});
+>>>>>>> 02240a9b172accb48467b4eebdbf125d4083507b
+
+Route::get('/dashboard', 'LanguagesController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
